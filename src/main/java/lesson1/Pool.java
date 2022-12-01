@@ -15,7 +15,5 @@ public class Pool {
         this.length = length;
     }
 
-    public double getTimeToOvercomePool(CanSwim swimmer) {
-        return swimmer.swim(this);
-    }
+
 }

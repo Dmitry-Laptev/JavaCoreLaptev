@@ -1,49 +1,42 @@
 package lesson1;
 
-        import static lesson1.Utils.makeAnimalOlder;
-
 public class Main {
     public static void main(String[] args) {
-        Cat cat1 = new Cat("Барсик", "белый", 1);
 
+        /*Cat cat1 = new Cat("Kitty", "Grey", 2);
         System.out.println(cat1);
 
-        Cat cat2 = new Cat("Морис", "black", 1);
+        Cat cat2 = new Cat("Ton", "Black", 1);
 
-        Cat cat3 = new Cat("Морис", "black", 1);
+        Cat cat3 = new Cat("Lucky", "White", 3);
 
-        System.out.println(cat2.equals(cat3));
+        cat1.setAge(-3);
+        System.out.println(cat1.getAge());
 
-        Wolf wolf = new Wolf("Тревор", "Серый", 6);
+        Wolf wolf = new Wolf("Trevor", "Grey", 5);
 
-        Animal cat4 = new Cat("Морис", "red", 10);
+        Animal cat4 = new Cat("Morris", "Red", 4);
 
         if (cat4 instanceof Wolf) {
-            Wolf cat5 = (Wolf) cat4;
-        } else {
-            System.out.println("Не является волком!");
+            Wolf wolf2 = (Wolf) cat4;
         }
 
-        Animal cat6 = new Cat("Морис", "red", 10);
-        cat6.voice();
+        cat4.voice();*/
 
-        //Создать набор бассейнов и заставить животных проплыть по ним и вывести время на заплыв
+        Player player1 = new Player("Ben", 20);
+        Player player2 = new Player("John", 10);
+        Player player3 = new Player("Mike", 15);
+        Player player4 = new Player("Tod", 5);
 
-        Cat catCompetitor1 = new Cat("Морис", "red", 10);
-        catCompetitor1.setSwimmingSpeed(10);
-        Wolf wolfCompetitor1 = new Wolf("Волк", "серый", 12);
-        wolfCompetitor1.setSwimmingSpeed(12);
-        Turtle turtleCompetitor = new Turtle("Черепаха", "зеленая", 100);
-        turtleCompetitor.setSwimmingSpeed(15);
+        Course c = new Course(100);
 
-        Pool[] pools = {new Pool(15), new Pool(20), new Pool(35)};
+        Team team = new Team("Star");
 
-        for (Pool pool : pools) {
-            pool.getTimeToOvercomePool(catCompetitor1);
-            pool.getTimeToOvercomePool(wolfCompetitor1);
-            pool.getTimeToOvercomePool(turtleCompetitor);
-        }
+        player1.swim(c);
+        player2.swim(c);
+        player3.swim(c);
+        player4.swim(c);
 
-        makeAnimalOlder(cat2);
+
     }
 }
